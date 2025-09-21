@@ -1,7 +1,18 @@
-import type { NextConfig } from "next";
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['images.unsplash.com', 'via.placeholder.com'],
+    unoptimized: true
+  },
+  trailingSlash: false,
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/en'
+      }
+    ]
+  }
+}
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+export default nextConfig

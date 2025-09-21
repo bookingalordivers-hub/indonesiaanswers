@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+:root {
+  --primary-color: #40a1ad;
+  --primary-dark: #2d7883;
+  --primary-light: #5ab4c0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Tighter hero and card rules */
+.hero-section {
+  padding-top: 2.25rem; /* 36px */
+  padding-bottom: 2.25rem;
+}
+
+/* Tighter hero and card image rules */
+.hero-section {
+  padding-top: 3.5rem; /* reduce from larger values */
+  padding-bottom: 3.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
+
+/* Prefer aspect-ratio wrappers over global forced heights so images scale naturally */
+/* The old rule that forced img height was removed in favor of aspect-ratio containers in components. */
+
+
+@media (min-width: 768px) {
+  .hero-section {
+    padding-top: 3.5rem; /* 56px */
+    padding-bottom: 3.5rem;
+  }
+}
+
+/* smaller nav and tighter spacing */
+nav { padding-top: 0.25rem; padding-bottom: 0.25rem }
+
+/* Ensure card images respect aspect and are not too tall on smaller screens */
+.card .object-cover { height: auto }
+
+/* Cap image heights to avoid huge images filling the page */
+.card img, .card picture, .card .object-cover {
+  /* provide a safe cap on legacy img tags while preferring aspect-ratio wrappers */
+  max-height: 320px;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 640px) {
+  .card img, .card picture, .card .object-cover {
+    max-height: 160px;
+  }
+  .hero-section h1 { font-size: 1.6rem; }
+}
+
+/* Slightly smaller nav links */
+nav a { font-size: 0.92rem }
+
