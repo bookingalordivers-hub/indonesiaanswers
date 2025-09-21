@@ -91,7 +91,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid-ct grid-ct-3 mb-8">
-            {featuredDestinations.slice(0, 6).map((destination) => (
+            {featuredDestinations.slice(0, 12).map((destination) => (
               <DestinationCard key={destination.id} destination={destination} />
             ))}
           </div>

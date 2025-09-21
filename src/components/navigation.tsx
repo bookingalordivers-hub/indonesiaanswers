@@ -19,8 +19,12 @@ export default function Navigation() {
       <div className="container-ct">
         <div className="nav-content">
           {/* Logo */}
-          <Link href="/" className="nav-logo">
-            Indonesia Answer
+          <Link href="/" className="flex items-center">
+            <img 
+              src="/logo.png" 
+              alt="Indonesia Answers" 
+              className="h-8 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}

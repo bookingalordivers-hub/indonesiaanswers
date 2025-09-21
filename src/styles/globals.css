@@ -230,7 +230,7 @@ body {
 
 /* Navigation Styles - Culture Trip inspired */
 .nav-ct {
-  background: #1a365d; /* Placeholder background - update with logo background color */
+  background: #5D9B9B; /* Teal color matching the logo background */
   box-shadow: var(--shadow-nav);
   position: sticky;
   top: 0;
@@ -393,6 +393,15 @@ body {
 /* Dropdown Menu Styles */
 .nav-links .relative:hover .absolute {
   display: block;
+}
+
+/* Ensure dropdown is properly styled */
+.nav-ct .relative .absolute {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  z-index: 1000;
 }
 
 /* Mobile adjustments */
