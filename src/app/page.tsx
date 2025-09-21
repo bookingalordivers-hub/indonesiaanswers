@@ -19,40 +19,6 @@ export default function HomePage() {
             <p className="text-xl mb-8 opacity-95 max-w-2xl mx-auto">
               From pristine beaches to ancient temples, explore Indonesia's most captivating destinations with insider guides and local expertise.
             </p>
-            
-            {/* Feature Benefits - Culture Trip style */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
-              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
-                <i className="fas fa-map-marked-alt text-2xl"></i>
-                <div className="text-left">
-                  <div className="font-semibold">Local Insider Guides</div>
-                  <div className="text-sm opacity-90">Expert recommendations</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
-                <i className="fas fa-star text-2xl"></i>
-                <div className="text-left">
-                  <div className="font-semibold">Trusted Reviews</div>
-                  <div className="text-sm opacity-90">Real traveler experiences</div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
-                <i className="fas fa-shield-alt text-2xl"></i>
-                <div className="text-left">
-                  <div className="font-semibold">Safe Travel Tips</div>
-                  <div className="text-sm opacity-90">Updated safety guides</div>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/destination" className="btn-primary">
-                Explore Destinations
-              </Link>
-              <Link href="/travel-tips" className="btn-secondary">
-                Travel Guides
-              </Link>
-            </div>
           </div>
         </div>
       </section>

@@ -297,6 +297,248 @@ export const destinations = [
       'Traditional ikat weaving culture',
       'Untouched natural landscapes'
     ]
+  },
+
+  {
+    id: 'lombok',
+    name: 'Lombok',
+    slug: 'lombok',
+    tagline: 'Island of Adventure',
+    region: 'West Nusa Tenggara',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80',
+    description: 'Lombok offers stunning beaches, Mount Rinjani volcano, and traditional Sasak culture with fewer crowds than Bali.',
+    coordinates: { lat: -8.6500, lng: 116.3242 },
+    quick_facts: {
+      best_time: 'May to September (dry season)',
+      duration: '5-10 days',
+      budget_per_day: { min: 25, max: 100, currency: 'USD' },
+      language: 'Indonesian, Sasak',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WITA (UTC+8)'
+    },
+    highlights: ['Mount Rinjani trekking', 'Gili Islands', 'Pink Beach', 'Sasak culture', 'Surfing spots']
+  },
+
+  {
+    id: 'flores',
+    name: 'Flores',
+    slug: 'flores',
+    tagline: 'Island of Dragons and Lakes',
+    region: 'East Nusa Tenggara',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=800&q=80',
+    description: 'Flores is home to Komodo dragons, colorful crater lakes at Kelimutu, and incredible diving opportunities.',
+    coordinates: { lat: -8.6573, lng: 121.0794 },
+    quick_facts: {
+      best_time: 'April to December',
+      duration: '7-14 days',
+      budget_per_day: { min: 35, max: 120, currency: 'USD' },
+      language: 'Indonesian, local dialects',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WITA (UTC+8)'
+    },
+    highlights: ['Komodo National Park', 'Kelimutu crater lakes', 'Traditional villages', 'World-class diving', 'Pink Beach Komodo']
+  },
+
+  {
+    id: 'sumatra',
+    name: 'Sumatra',
+    slug: 'sumatra',
+    tagline: 'Island of Wildlife and Adventure',
+    region: 'Sumatra',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924608667-04f45b1ae7d7?auto=format&fit=crop&w=800&q=80',
+    description: 'Sumatra offers incredible wildlife, including orangutans and tigers, plus Lake Toba and diverse cultures.',
+    coordinates: { lat: 0.5897, lng: 101.3431 },
+    quick_facts: {
+      best_time: 'May to September',
+      duration: '10-21 days',
+      budget_per_day: { min: 20, max: 80, currency: 'USD' },
+      language: 'Indonesian, Batak, Minang',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIB (UTC+7)'
+    },
+    highlights: ['Orangutan sanctuaries', 'Lake Toba', 'Mentawai Islands surfing', 'Batak culture', 'Kerinci National Park']
+  },
+
+  {
+    id: 'kalimantan',
+    name: 'Kalimantan (Borneo)',
+    slug: 'kalimantan',
+    tagline: 'Heart of Borneo',
+    region: 'Kalimantan',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80',
+    description: 'Indonesian Borneo offers pristine rainforests, orangutans, Dayak culture, and river adventures.',
+    coordinates: { lat: -0.7893, lng: 113.9213 },
+    quick_facts: {
+      best_time: 'May to October',
+      duration: '7-14 days',
+      budget_per_day: { min: 30, max: 100, currency: 'USD' },
+      language: 'Indonesian, Dayak languages',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WITA (UTC+8)'
+    },
+    highlights: ['Tanjung Puting National Park', 'Orangutan rehabilitation', 'Dayak longhouses', 'River cruises', 'Mahakam River']
+  },
+
+  {
+    id: 'sulawesi',
+    name: 'Sulawesi',
+    slug: 'sulawesi',
+    tagline: 'Island of Unique Culture',
+    region: 'Sulawesi',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924801751-8ec09a01264d?auto=format&fit=crop&w=800&q=80',
+    description: 'Sulawesi features unique Torajan culture, pristine diving, and endemic wildlife in a distinctive orchid-shaped island.',
+    coordinates: { lat: -2.4833, lng: 120.1167 },
+    quick_facts: {
+      best_time: 'April to October',
+      duration: '7-14 days',
+      budget_per_day: { min: 25, max: 90, currency: 'USD' },
+      language: 'Indonesian, Torajan, Buginese',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WITA (UTC+8)'
+    },
+    highlights: ['Torajan culture', 'Bunaken Marine Park', 'Traditional ceremonies', 'Endemic wildlife', 'Makassar historic sites']
+  },
+
+  {
+    id: 'raja-ampat',
+    name: 'Raja Ampat',
+    slug: 'raja-ampat',
+    tagline: 'Crown Jewel of Marine Life',
+    region: 'West Papua',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1582719471137-c3967ffb1c42?auto=format&fit=crop&w=800&q=80',
+    description: 'Raja Ampat is the world\'s richest marine biodiversity hotspot, perfect for diving and pristine nature.',
+    coordinates: { lat: -0.2317, lng: 130.5233 },
+    quick_facts: {
+      best_time: 'October to April',
+      duration: '7-14 days',
+      budget_per_day: { min: 80, max: 250, currency: 'USD' },
+      language: 'Indonesian, local Papuan',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIT (UTC+9)'
+    },
+    highlights: ['World-class diving', 'Marine biodiversity', 'Remote islands', 'Karst landscapes', 'Bird watching']
+  },
+
+  {
+    id: 'maluku',
+    name: 'Maluku (Spice Islands)',
+    slug: 'maluku',
+    tagline: 'Original Spice Islands',
+    region: 'Maluku',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=800&q=80',
+    description: 'The historic Spice Islands offer pristine beaches, colonial history, and unique Malukan culture.',
+    coordinates: { lat: -3.2385, lng: 130.1453 },
+    quick_facts: {
+      best_time: 'October to March',
+      duration: '5-10 days',
+      budget_per_day: { min: 40, max: 120, currency: 'USD' },
+      language: 'Indonesian, Ambonese Malay',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIT (UTC+9)'
+    },
+    highlights: ['Spice plantations', 'Colonial fortresses', 'Pristine beaches', 'Unique culture', 'WWII history sites']
+  },
+
+  {
+    id: 'yogyakarta',
+    name: 'Yogyakarta',
+    slug: 'yogyakarta',
+    tagline: 'Cultural Heart of Java',
+    region: 'Central Java',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924378985-642dd4d8af84?auto=format&fit=crop&w=800&q=80',
+    description: 'Yogyakarta is Java\'s cultural capital, home to ancient temples, royal palaces, and traditional arts.',
+    coordinates: { lat: -7.7956, lng: 110.3695 },
+    quick_facts: {
+      best_time: 'May to September',
+      duration: '3-7 days',
+      budget_per_day: { min: 15, max: 60, currency: 'USD' },
+      language: 'Indonesian, Javanese',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIB (UTC+7)'
+    },
+    highlights: ['Borobudur Temple', 'Prambanan Temple', 'Sultan Palace', 'Traditional arts', 'Malioboro Street']
+  },
+
+  {
+    id: 'bandung',
+    name: 'Bandung',
+    slug: 'bandung',
+    tagline: 'Paris of Java',
+    region: 'West Java',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924608667-04f45b1ae7d7?auto=format&fit=crop&w=800&q=80',
+    description: 'Bandung is known for its cool climate, Art Deco architecture, fashion outlets, and volcanic landscapes.',
+    coordinates: { lat: -6.9175, lng: 107.6191 },
+    quick_facts: {
+      best_time: 'Year-round (cool climate)',
+      duration: '2-5 days',
+      budget_per_day: { min: 20, max: 70, currency: 'USD' },
+      language: 'Indonesian, Sundanese',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIB (UTC+7)'
+    },
+    highlights: ['Art Deco buildings', 'Factory outlets', 'Volcanic craters', 'Cool mountain climate', 'Culinary scene']
+  },
+
+  {
+    id: 'belitung',
+    name: 'Belitung',
+    slug: 'belitung',
+    tagline: 'Island of Granite and Beaches',
+    region: 'Bangka Belitung',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924801751-8ec09a01264d?auto=format&fit=crop&w=800&q=80',
+    description: 'Belitung features unique granite rock formations, pristine white sand beaches, and crystal-clear waters.',
+    coordinates: { lat: -2.7411, lng: 107.6406 },
+    quick_facts: {
+      best_time: 'March to October',
+      duration: '3-7 days',
+      budget_per_day: { min: 30, max: 80, currency: 'USD' },
+      language: 'Indonesian, Chinese dialects',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIB (UTC+7)'
+    },
+    highlights: ['Granite rock beaches', 'Island hopping', 'Tin mining heritage', 'Pristine beaches', 'Laskar Pelangi tourism']
+  },
+
+  {
+    id: 'batam',
+    name: 'Batam & Bintan',
+    slug: 'batam',
+    tagline: 'Gateway Islands',
+    region: 'Riau Islands',
+    country: 'Indonesia',
+    featured: true,
+    image: 'https://images.unsplash.com/photo-1578924608667-04f45b1ae7d7?auto=format&fit=crop&w=800&q=80',
+    description: 'Batam and Bintan offer convenient island getaways with resorts, water sports, and duty-free shopping.',
+    coordinates: { lat: 1.1079, lng: 104.0457 },
+    quick_facts: {
+      best_time: 'February to October',
+      duration: '2-5 days',
+      budget_per_day: { min: 40, max: 150, currency: 'USD' },
+      language: 'Indonesian, Malay',
+      currency: 'Indonesian Rupiah (IDR)',
+      time_zone: 'WIB (UTC+7)'
+    },
+    highlights: ['Resort islands', 'Water sports', 'Duty-free shopping', 'Golf courses', 'Ferry access from Singapore']
   }
 ];
 

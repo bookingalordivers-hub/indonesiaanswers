@@ -230,7 +230,7 @@ body {
 
 /* Navigation Styles - Culture Trip inspired */
 .nav-ct {
-  background: white;
+  background: #1a365d; /* Placeholder background - update with logo background color */
   box-shadow: var(--shadow-nav);
   position: sticky;
   top: 0;
@@ -247,7 +247,7 @@ body {
 .nav-logo {
   font-size: var(--font-size-2xl);
   font-weight: 700;
-  color: var(--color-primary);
+  color: white; /* White logo text to contrast with dark background */
   text-decoration: none;
 }
 
@@ -258,7 +258,7 @@ body {
 }
 
 .nav-links a {
-  color: var(--text-primary);
+  color: white; /* White navigation links */
   text-decoration: none;
   font-weight: 500;
   font-size: var(--font-size-sm);
@@ -266,7 +266,7 @@ body {
 }
 
 .nav-links a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent); /* Green hover effect */
 }
 
 /* Typography Scale - Culture Trip style */
@@ -388,6 +388,11 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Dropdown Menu Styles */
+.nav-links .relative:hover .absolute {
+  display: block;
 }
 
 /* Mobile adjustments */
