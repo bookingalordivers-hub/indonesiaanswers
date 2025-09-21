@@ -1,0 +1,16 @@
+
+> indonesia-answer-nextjs@1.0.0 dev
+> next dev
+
+(node:8633) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+   ▲ Next.js 14.0.3
+   - Local:        http://localhost:3000
+
+(node:8644) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ Ready in 2.5s

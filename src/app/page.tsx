@@ -1,77 +1,191 @@
 import { getFeaturedDestinations } from '../data/destinations'
 import DestinationCard from '../components/DestinationCard'
-import Spotlight from '../components/Spotlight'
-import AsideList from '../components/AsideList'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function HomePage() {
   const featuredDestinations = getFeaturedDestinations()
-
-  // choose the first featured as the spotlight and keep a short aside list
-  const spotlight = featuredDestinations[0]
-  const asideItems = featuredDestinations.slice(1, 5)
+  const heroDestination = featuredDestinations[0]
 
   return (
     <div className="min-h-screen bg-white">
-      {/* CultureTrip-inspired Hero: two-column */}
-      <section className="hero-section relative bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="lg:col-span-2">
-              <Spotlight destination={spotlight} />
+      {/* Hero Section - Culture Trip style */}
+      <section className="hero-ct">
+        <div className="container-ct">
+          <div className="hero-content text-center">
+            <h1 className="text-h1 mb-6">
+              Discover Indonesia's Hidden Gems
+            </h1>
+            <p className="text-xl mb-8 opacity-95 max-w-2xl mx-auto">
+              From pristine beaches to ancient temples, explore Indonesia's most captivating destinations with insider guides and local expertise.
+            </p>
+            
+            {/* Feature Benefits - Culture Trip style */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 max-w-4xl mx-auto">
+              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
+                <i className="fas fa-map-marked-alt text-2xl"></i>
+                <div className="text-left">
+                  <div className="font-semibold">Local Insider Guides</div>
+                  <div className="text-sm opacity-90">Expert recommendations</div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
+                <i className="fas fa-star text-2xl"></i>
+                <div className="text-left">
+                  <div className="font-semibold">Trusted Reviews</div>
+                  <div className="text-sm opacity-90">Real traveler experiences</div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center md:justify-start gap-3 text-white">
+                <i className="fas fa-shield-alt text-2xl"></i>
+                <div className="text-left">
+                  <div className="font-semibold">Safe Travel Tips</div>
+                  <div className="text-sm opacity-90">Updated safety guides</div>
+                </div>
+              </div>
             </div>
 
-            <div className="hidden lg:block">
-              <AsideList items={asideItems} />
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/destination" className="btn-primary">
+                Explore Destinations
+              </Link>
+              <Link href="/travel-tips" className="btn-secondary">
+                Travel Guides
+              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Featured Destinations grid (kept below the hero) */}
-      <section className="py-12 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Featured Destinations</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">Explore Indonesia&apos;s most popular and breathtaking destinations</p>
+      {/* Featured Destination Spotlight */}
+      <section className="section-ct bg-muted">
+        <div className="container-ct">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="spotlight-ct">
+              <Image
+                src={heroDestination.image}
+                alt={heroDestination.name}
+                width={600}
+                height={400}
+                className="w-full h-96 object-cover"
+              />
+              <div className="spotlight-content">
+                <div className="inline-block bg-accent text-white px-3 py-1 rounded-full text-sm font-semibold mb-2">
+                  Featured Destination
+                </div>
+                <h3 className="text-h2 mb-2">{heroDestination.name}</h3>
+                <p className="text-lg opacity-95">{heroDestination.tagline}</p>
+              </div>
+            </div>
+            
+            <div>
+              <h2 className="text-h2 mb-4">Start Your Indonesian Adventure</h2>
+              <p className="text-body text-muted mb-6 leading-relaxed">
+                Indonesia offers an incredible diversity of experiences, from the cultural heart of Bali to the pristine beaches of Raja Ampat. 
+                Our comprehensive guides help you navigate this archipelago of over 17,000 islands with confidence.
+              </p>
+              
+              <div className="space-y-4 mb-6">
+                <div className="flex items-start gap-3">
+                  <i className="fas fa-check-circle text-accent mt-1"></i>
+                  <div>
+                    <strong>Visa-free entry</strong> for many countries up to 30 days
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <i className="fas fa-check-circle text-accent mt-1"></i>
+                  <div>
+                    <strong>Budget-friendly travel</strong> from $30-50 per day
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <i className="fas fa-check-circle text-accent mt-1"></i>
+                  <div>
+                    <strong>Year-round destinations</strong> with varied climates
+                  </div>
+                </div>
+              </div>
+              
+              <Link href={`/destination/${heroDestination.slug}`} className="btn-primary">
+                Discover {heroDestination.name}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Destinations Grid - Culture Trip style */}
+      <section className="section-ct">
+        <div className="container-ct">
+          <div className="text-center mb-12">
+            <h2 className="text-h2 mb-4">Popular Destinations</h2>
+            <p className="text-lg text-muted max-w-2xl mx-auto">
+              Discover Indonesia's most beloved destinations, from tropical paradises to cultural treasures
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6">
-            {featuredDestinations.map((destination, index) => (
-              // Make the first card span more columns for a staggered look
-              <div key={destination.id} className={index === 0 ? 'lg:col-span-4 md:col-span-2' : 'lg:col-span-2 md:col-span-1'}>
-                <DestinationCard destination={destination} delay={index * 0.05} />
-              </div>
+          <div className="grid-ct grid-ct-3 mb-8">
+            {featuredDestinations.slice(0, 6).map((destination) => (
+              <DestinationCard key={destination.id} destination={destination} />
             ))}
           </div>
+
+          <div className="text-center">
+            <Link href="/destination" className="btn-secondary">
+              View All Destinations
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Quick Info Section - keep small */}
-      <section className="py-12 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Travel Services - Culture Trip style */}
+      <section className="section-ct bg-muted">
+        <div className="container-ct">
+          <div className="text-center mb-12">
+            <h2 className="text-h2 mb-4">Everything You Need for Indonesia</h2>
+            <p className="text-lg text-muted max-w-2xl mx-auto">
+              Complete travel resources to make your Indonesian journey unforgettable
+            </p>
+          </div>
+
+          <div className="grid-ct grid-ct-3">
             <div className="text-center">
-              <div className="bg-primary-light text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-plane text-2xl"></i>
+              <div className="feature-icon primary mx-auto">
+                <i className="fas fa-plane"></i>
               </div>
-              <h3 className="text-xl font-bold mb-2">Travel Tips</h3>
-              <p className="text-gray-600">Get essential travel information, visa requirements, and local customs</p>
+              <h3 className="text-h3 mb-3">Travel Planning</h3>
+              <p className="text-muted mb-4">
+                Complete guides on flights, visas, vaccinations, and travel insurance for Indonesia
+              </p>
+              <Link href="/travel-tips" className="text-primary font-semibold hover:underline">
+                Learn More →
+              </Link>
             </div>
 
             <div className="text-center">
-              <div className="bg-primary text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-hotel text-2xl"></i>
+              <div className="feature-icon accent mx-auto">
+                <i className="fas fa-bed"></i>
               </div>
-              <h3 className="text-xl font-bold mb-2">Hotels & Stay</h3>
-              <p className="text-gray-600">Find the perfect accommodation from budget hostels to luxury resorts</p>
+              <h3 className="text-h3 mb-3">Accommodation</h3>
+              <p className="text-muted mb-4">
+                From backpacker hostels to luxury resorts - find the perfect place to stay
+              </p>
+              <Link href="/hotels" className="text-primary font-semibold hover:underline">
+                Find Hotels →
+              </Link>
             </div>
 
             <div className="text-center">
-              <div className="bg-primary-dark text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <i className="fas fa-map text-2xl"></i>
+              <div className="feature-icon secondary mx-auto">
+                <i className="fas fa-heart"></i>
               </div>
-              <h3 className="text-xl font-bold mb-2">Local Culture</h3>
-              <p className="text-gray-600">Discover rich traditions, festivals, and authentic local experiences</p>
+              <h3 className="text-h3 mb-3">Local Culture</h3>
+              <p className="text-muted mb-4">
+                Understand Indonesian customs, traditions, and etiquette for respectful travel
+              </p>
+              <Link href="/culture" className="text-primary font-semibold hover:underline">
+                Explore Culture →
+              </Link>
             </div>
           </div>
         </div>

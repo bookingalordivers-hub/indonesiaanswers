@@ -5,104 +5,456 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
 
+/* Culture Trip-inspired Design System */
 :root {
-  --primary-color: #40a1ad;
-  --primary-dark: #2d7883;
-  --primary-light: #5ab4c0;
+  /* Primary Colors - Culture Trip style */
+  --color-primary: #00A6D6;
+  --color-accent: #23C46C;
+  --color-secondary: #FF6B6B;
+  
+  /* Text Colors */
+  --text-primary: #111111;
+  --text-muted: #666666;
+  --text-light: #999999;
+  
+  /* Backgrounds */
+  --bg-primary: #FFFFFF;
+  --bg-muted: #F7F8F9;
+  --bg-dark: #0F1720;
+  
+  /* Spacing tokens */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-xxl: 72px;
+  
+  /* Typography */
+  --font-size-xs: 13px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 48px;
+  
+  /* Borders & Radius */
+  --border-radius: 8px;
+  --border-radius-sm: 6px;
+  
+  /* Shadows */
+  --shadow-card: 0 6px 18px rgba(10, 10, 10, 0.08);
+  --shadow-card-hover: 0 14px 30px rgba(10, 10, 10, 0.12);
+  --shadow-nav: 0 2px 10px rgba(10, 10, 10, 0.05);
 }
 
+/* Base Styles */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  line-height: 1.6;
+html {
   scroll-behavior: smooth;
 }
 
-.btn-primary {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 500;
-  transition: all 0.2s;
-  border: none;
-  cursor: pointer;
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.5;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  font-size: var(--font-size-base);
 }
 
-.btn-primary:hover {
-  background-color: var(--primary-dark);
-  transform: translateY(-1px);
+/* Typography Utilities */
+.text-primary {
+  color: var(--color-primary);
 }
 
-.card {
-  background-color: white;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-  transition: all 0.3s;
+.text-accent {
+  color: var(--color-accent);
 }
 
-.card:hover {
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+.text-muted {
+  color: var(--text-muted);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+/* Background Utilities */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-muted {
+  background-color: var(--bg-muted);
+}
+
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+
+/* Container - Culture Trip style */
+.container-ct {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+@media (max-width: 768px) {
+  .container-ct {
+    padding: 0 var(--space-sm);
+  }
+}
+
+/* Culture Trip Card Styles */
+.card-ct {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-ct:hover {
+  box-shadow: var(--shadow-card-hover);
   transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Tighter hero and card rules */
-.hero-section {
-  padding-top: 2.25rem; /* 36px */
-  padding-bottom: 2.25rem;
-}
-
-/* Tighter hero and card image rules */
-.hero-section {
-  padding-top: 3.5rem; /* reduce from larger values */
-  padding-bottom: 3.5rem;
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
-  }
-}
-
-/* Prefer aspect-ratio wrappers over global forced heights so images scale naturally */
-/* The old rule that forced img height was removed in favor of aspect-ratio containers in components. */
-
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding-top: 3.5rem; /* 56px */
-    padding-bottom: 3.5rem;
-  }
-}
-
-/* smaller nav and tighter spacing */
-nav { padding-top: 0.25rem; padding-bottom: 0.25rem }
-
-/* Ensure card images respect aspect and are not too tall on smaller screens */
-.card .object-cover { height: auto }
-
-/* Cap image heights to avoid huge images filling the page */
-.card img, .card picture, .card .object-cover {
-  /* provide a safe cap on legacy img tags while preferring aspect-ratio wrappers */
-  max-height: 320px;
+.card-ct img {
+  transition: transform 0.3s ease;
   width: 100%;
+  height: 200px;
   object-fit: cover;
 }
 
-@media (max-width: 640px) {
-  .card img, .card picture, .card .object-cover {
-    max-height: 160px;
-  }
-  .hero-section h1 { font-size: 1.6rem; }
+.card-ct:hover img {
+  transform: scale(1.03);
 }
 
-/* Slightly smaller nav links */
-nav a { font-size: 0.92rem }
+/* Button Styles - Culture Trip inspired */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 24px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+}
 
+.btn-primary:hover {
+  background-color: #0088B8;
+  transform: translateY(-1px);
+  text-decoration: none;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  padding: 10px 22px;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: var(--font-size-base);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section - Culture Trip style */
+.hero-ct {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: white;
+  padding: var(--space-xxl) 0;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Grid System - Culture Trip inspired */
+.grid-ct {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.grid-ct-1 { grid-template-columns: 1fr; }
+.grid-ct-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-ct-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-ct-4 { grid-template-columns: repeat(4, 1fr); }
+
+@media (max-width: 900px) {
+  .grid-ct-3, .grid-ct-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-ct-2, .grid-ct-3, .grid-ct-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-ct {
+    gap: var(--space-sm);
+  }
+}
+
+/* Navigation Styles - Culture Trip inspired */
+.nav-ct {
+  background: white;
+  box-shadow: var(--shadow-nav);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: var(--space-sm) 0;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: var(--font-size-2xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: var(--space-lg);
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-primary);
+}
+
+/* Typography Scale - Culture Trip style */
+.text-h1 {
+  font-size: var(--font-size-4xl);
+  line-height: 1.1;
+  font-weight: 700;
+}
+
+.text-h2 {
+  font-size: var(--font-size-3xl);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.text-h3 {
+  font-size: var(--font-size-xl);
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.text-body {
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.text-meta {
+  font-size: var(--font-size-xs);
+  line-height: 1.4;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* Feature Icons - Culture Trip style */
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-bottom: var(--space-sm);
+}
+
+.feature-icon.primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.feature-icon.accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.feature-icon.secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+
+/* Spotlight Section */
+.spotlight-ct {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-card);
+}
+
+.spotlight-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  padding: var(--space-xl);
+}
+
+/* Section Spacing */
+.section-ct {
+  padding: var(--space-xl) 0;
+}
+
+.section-ct.hero {
+  padding: var(--space-xxl) 0;
+}
+
+.section-ct.large {
+  padding: calc(var(--space-xxl) * 1.5) 0;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .text-h1 {
+    font-size: var(--font-size-3xl);
+  }
+  
+  .text-h2 {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .hero-ct {
+    padding: var(--space-xl) 0;
+  }
+  
+  .section-ct {
+    padding: var(--space-lg) 0;
+  }
+  
+  .nav-links {
+    display: none; /* Will be replaced with hamburger menu */
+  }
+}
+
+/* Footer - Culture Trip inspired */
+.footer-ct {
+  background-color: var(--bg-dark);
+  color: white;
+  padding: var(--space-xxl) 0 var(--space-xl) 0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.footer-section h3 {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section li {
+  margin-bottom: var(--space-xs);
+}
+
+.footer-section a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--color-primary);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: var(--space-md);
+  text-align: center;
+  color: #999;
+  font-size: var(--font-size-sm);
+}
