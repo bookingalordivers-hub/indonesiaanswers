@@ -1,0 +1,96 @@
+2025-09-21 12:58:15,012 INFO RPC interface 'supervisor' initialized
+2025-09-21 12:58:15,012 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-09-21 12:58:15,015 INFO daemonizing the supervisord process
+2025-09-21 12:58:15,016 INFO supervisord started with pid 6437
+2025-09-21 12:58:16,022 INFO spawned: 'indonesia-answers' with pid 6458
+2025-09-21 12:58:17,772 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:17,773 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:18,777 INFO spawned: 'indonesia-answers' with pid 6518
+2025-09-21 12:58:19,517 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:20,522 INFO spawned: 'indonesia-answers' with pid 6570
+2025-09-21 12:58:22,192 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:22,192 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:23,197 INFO spawned: 'indonesia-answers' with pid 6619
+2025-09-21 12:58:23,846 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:25,273 INFO spawned: 'indonesia-answers' with pid 6644
+2025-09-21 12:58:25,898 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:27,903 INFO spawned: 'indonesia-answers' with pid 6672
+2025-09-21 12:58:28,604 WARN exited: indonesia-answers (exit status 1; not expected)
+2025-09-21 12:58:31,611 INFO spawned: 'indonesia-answers' with pid 6747
+2025-09-21 12:58:32,840 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:36,317 INFO waiting for indonesia-answers to stop
+2025-09-21 12:58:36,330 WARN stopped: indonesia-answers (terminated by SIGTERM)
+2025-09-21 12:58:36,336 INFO spawned: 'indonesia-answers' with pid 6855
+2025-09-21 12:58:37,336 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:38,397 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:39,400 INFO spawned: 'indonesia-answers' with pid 6902
+2025-09-21 12:58:40,416 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:41,468 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:42,472 INFO spawned: 'indonesia-answers' with pid 6976
+2025-09-21 12:58:43,504 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:44,557 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:45,561 INFO spawned: 'indonesia-answers' with pid 7046
+2025-09-21 12:58:47,538 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:47,538 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:48,542 INFO spawned: 'indonesia-answers' with pid 7092
+2025-09-21 12:58:49,598 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:49,598 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:50,601 INFO spawned: 'indonesia-answers' with pid 7137
+2025-09-21 12:58:51,617 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:52,577 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:52,580 INFO spawned: 'indonesia-answers' with pid 7182
+2025-09-21 12:58:54,574 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:54,574 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:55,578 INFO spawned: 'indonesia-answers' with pid 7228
+2025-09-21 12:58:57,571 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:58:57,572 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:58:58,575 INFO spawned: 'indonesia-answers' with pid 7274
+2025-09-21 12:58:59,590 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:00,632 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:01,636 INFO spawned: 'indonesia-answers' with pid 7366
+2025-09-21 12:59:02,661 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:03,727 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:03,945 INFO spawned: 'indonesia-answers' with pid 7417
+2025-09-21 12:59:05,216 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:06,350 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:07,354 INFO spawned: 'indonesia-answers' with pid 7466
+2025-09-21 12:59:08,901 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:09,986 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:10,989 INFO spawned: 'indonesia-answers' with pid 7512
+2025-09-21 12:59:12,299 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:13,352 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:14,357 INFO spawned: 'indonesia-answers' with pid 7559
+2025-09-21 12:59:15,651 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:16,708 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:17,712 INFO spawned: 'indonesia-answers' with pid 7605
+2025-09-21 12:59:18,792 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:19,867 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:20,870 INFO spawned: 'indonesia-answers' with pid 7651
+2025-09-21 12:59:22,299 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:22,355 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:23,358 INFO spawned: 'indonesia-answers' with pid 7697
+2025-09-21 12:59:24,492 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:25,565 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:26,568 INFO spawned: 'indonesia-answers' with pid 7743
+2025-09-21 12:59:27,738 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:28,800 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:29,804 INFO spawned: 'indonesia-answers' with pid 7789
+2025-09-21 12:59:30,962 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:32,015 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:33,019 INFO spawned: 'indonesia-answers' with pid 7835
+2025-09-21 12:59:34,431 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:34,514 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:35,518 INFO spawned: 'indonesia-answers' with pid 7881
+2025-09-21 12:59:36,865 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:36,936 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:36,944 INFO spawned: 'indonesia-answers' with pid 7918
+2025-09-21 12:59:38,471 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:40,014 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:40,022 INFO spawned: 'indonesia-answers' with pid 7964
+2025-09-21 12:59:41,885 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 12:59:43,378 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 12:59:44,396 INFO spawned: 'indonesia-answers' with pid 8019
+2025-09-21 12:59:46,106 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2025-09-21 13:00:04,914 INFO exited: indonesia-answers (exit status 0; expected)
+2025-09-21 13:00:04,929 INFO spawned: 'indonesia-answers' with pid 8074
+2025-09-21 13:00:05,934 INFO success: indonesia-answers entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

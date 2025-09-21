@@ -1,0 +1,600 @@
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+/home/user/webapp/node_modules/next/dist/server/config.js:778
+            throw new Error(`Configuring Next.js via '${(0, _path.basename)(nonJsPath)}' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.`);
+                  ^
+
+Error: Configuring Next.js via 'next.config.ts' is not supported. Please replace the file with 'next.config.js' or 'next.config.mjs'.
+    at loadConfig (/home/user/webapp/node_modules/next/dist/server/config.js:778:19)
+    at async nextDev (/home/user/webapp/node_modules/next/dist/cli/next-dev.js:191:14)
+    at async main (/home/user/webapp/node_modules/next/dist/bin/next:150:5)
+
+Node.js v20.19.3
+(node:6759) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6773) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:6867) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:6914) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7006) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7058) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7104) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7149) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7194) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7240) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7289) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7379) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7430) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7478) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7525) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7571) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7617) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7664) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7709) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7755) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7801) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7848) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7893) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7938) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:7984) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:8031) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ⨯ Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at /home/user/webapp/node_modules/next/dist/server/lib/start-server.js:268:16
+    at new Promise (<anonymous>)
+    at startServer (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:181:11)
+    at process.<anonymous> (/home/user/webapp/node_modules/next/dist/server/lib/start-server.js:291:19)
+    at process.emit (node:events:524:28)
+    at emit (node:internal/child_process:950:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+(node:8095) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///home/user/webapp/next.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /home/user/webapp/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)

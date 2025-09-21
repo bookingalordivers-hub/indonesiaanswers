@@ -4,15 +4,7 @@ const nextConfig = {
     domains: ['images.unsplash.com', 'via.placeholder.com'],
     unoptimized: true
   },
-  trailingSlash: false,
-  async rewrites() {
-    return [
-      {
-        source: '/',
-        destination: '/en'
-      }
-    ]
-  }
+  trailingSlash: false
 }
 
 export default nextConfig
