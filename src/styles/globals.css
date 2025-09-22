@@ -230,12 +230,12 @@ body {
 
 /* Navigation Styles - Culture Trip inspired */
 .nav-ct {
-  background: #5D9B9B; /* Teal color matching the logo background */
+  background: #69B7A7; /* Exact teal color from logo */
   box-shadow: var(--shadow-nav);
   position: sticky;
   top: 0;
-  z-index: 100;
-  padding: var(--space-sm) 0;
+  z-index: 1000;
+  padding: 12px 0;
 }
 
 .nav-content {
@@ -257,16 +257,21 @@ body {
   align-items: center;
 }
 
-.nav-links a {
-  color: white; /* White navigation links */
+.nav-links a,
+.nav-link {
+  color: white;
   text-decoration: none;
   font-weight: 500;
-  font-size: var(--font-size-sm);
-  transition: color 0.3s ease;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
-.nav-links a:hover {
-  color: var(--color-accent); /* Green hover effect */
+.nav-links a:hover,
+.nav-link:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Typography Scale - Culture Trip style */
@@ -390,18 +395,44 @@ body {
   }
 }
 
-/* Dropdown Menu Styles */
-.nav-links .relative:hover .absolute {
-  display: block;
-}
-
-/* Ensure dropdown is properly styled */
-.nav-ct .relative .absolute {
+/* Dropdown Menu Styles - Fixed */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  width: 280px;
   background: white;
   border: 1px solid #e2e8f0;
-  border-radius: var(--border-radius);
-  box-shadow: var(--shadow-card);
-  z-index: 1000;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.dropdown-trigger:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8fafc;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none;
 }
 
 /* Mobile adjustments */
@@ -422,8 +453,14 @@ body {
     padding: var(--space-lg) 0;
   }
   
-  .nav-links {
-    display: none; /* Will be replaced with hamburger menu */
+  .dropdown-menu {
+    width: 280px;
+    left: 0;
+    transform: translateX(0) translateY(-10px);
+  }
+  
+  .dropdown-trigger:hover .dropdown-menu {
+    transform: translateX(0) translateY(0);
   }
 }
 

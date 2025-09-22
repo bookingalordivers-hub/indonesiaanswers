@@ -23,57 +23,54 @@ export default function Navigation() {
             <img 
               src="/logo.png" 
               alt="Indonesia Answers" 
-              className="h-8 w-auto"
+              className="h-4 w-auto"
             />
           </Link>
 
           {/* Desktop Navigation */}
           <div className="nav-links">
             {/* Destinations Dropdown */}
-            <div 
-              className="relative"
-              onMouseEnter={() => setIsDestinationsOpen(true)}
-              onMouseLeave={() => setIsDestinationsOpen(false)}
-            >
-              <Link href="/destination" className="flex items-center gap-1">
+            <div className="dropdown-trigger">
+              <Link href="/destination" className="nav-link flex items-center gap-1">
                 Destinations
                 <i className="fas fa-chevron-down text-xs"></i>
               </Link>
               
-              {isDestinationsOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md border z-50">
-                  <div className="py-2 max-h-96 overflow-y-auto">
-                    {destinations.map((destination) => (
-                      <Link
-                        key={destination.id}
-                        href={`/destination/${destination.slug}`}
-                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-primary transition-colors"
-                      >
-                        <div className="font-medium">{destination.name}</div>
-                        <div className="text-xs text-gray-500">{destination.tagline}</div>
-                      </Link>
-                    ))}
-                    <div className="border-t mt-2 pt-2">
-                      <Link
-                        href="/destination"
-                        className="block px-4 py-2 text-sm font-medium text-primary hover:bg-gray-100"
-                      >
-                        View All Destinations →
-                      </Link>
-                    </div>
+              <div className="dropdown-menu">
+                <div className="max-h-80 overflow-y-auto">
+                  {destinations.map((destination) => (
+                    <Link
+                      key={destination.id}
+                      href={`/destination/${destination.slug}`}
+                      className="dropdown-item"
+                    >
+                      <div className="font-medium text-gray-900 text-sm">{destination.name}</div>
+                      <div className="text-xs text-gray-500 mt-1">{destination.tagline}</div>
+                    </Link>
+                  ))}
+                  <div className="dropdown-item border-t border-gray-200 mt-2 pt-3">
+                    <Link
+                      href="/destination"
+                      className="text-sm font-medium text-teal-600 hover:text-teal-700 flex items-center gap-1"
+                    >
+                      View All Destinations
+                      <i className="fas fa-arrow-right text-xs"></i>
+                    </Link>
                   </div>
                 </div>
-              )}
+              </div>
             </div>
 
             {navigation.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
+                className="nav-link"
               >
                 {item.name}
               </Link>
             ))}
+            
             <Link href="/destination" className="btn-primary">
               Explore Now
             </Link>
